@@ -1,0 +1,30 @@
+<li>
+  <div class="row recipe-tile">
+    {{#link-to 'recipe' recipe.id}}<h1>{{recipe.name}}</h1>
+    {{/link-to}}
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <img class="recipe-image" src={{recipe.image}} alt="Picture of {{recipe.name}}"/>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <br><br>
+      <h4 class="cook"><strong>Cook Time:  </strong> {{recipe.cook_time}}</h4><br>
+      <h4 class="cook"><strong>Serves:</strong>  {{recipe.servings}}</h4>
+    </div>
+  </div>
+
+
+  <!-- {{new-ingredient saveIngredient3="saveIngredient2"}} -->
+  {{#if areDirectionsShowing }}
+    <hr>
+    <h4>Directions</h4>
+    <div class="recipe-directions">
+      <p {{action 'directionsHide'}}>{{recipe.directions}}</p>
+    </div>
+  {{else}}
+    <div class="show-directions">
+      <button {{action 'directionsShow'}}>Show Recipe Directions</button>
+    </div>
+  {{/if}}
+  {{update-recipe recipe=recipe update="update"}}
+  <button {{action 'delete' recipe}}>Delete Recipe</button>
+</li>

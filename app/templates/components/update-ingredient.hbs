@@ -1,0 +1,32 @@
+{{#if updateIngredientForm}}
+<h4>Update {{recipe.name}}</h4>
+  <div class="update-ingredient">
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="measurement">Measurement</label>
+          {{input value=measurement id="measurement" placeholder=ingredient.measurement}}
+        </div>
+
+        <div class="form-group">
+          <label for="units">Units</label>
+          {{input value=units id="units" placeholder=ingredient.units}}
+        </div>
+
+        <div class="form-group">
+          <label for="name">Ingredient name</label>
+          {{input value=name id="name" placeholder=ingredient.name}}
+        </div>
+
+        <div class="form-group">
+          <label for="source">Source</label>
+          {{input value=source id="source" placeholder=ingredient.source}}
+        </div>
+
+        <button {{action 'update' ingredient}}>Update it!</button>
+      </form>
+    </div>
+  </div>
+{{else}}
+    <button {{action 'updateIngredientForm'}}>Show Update Form</button>
+{{/if}}

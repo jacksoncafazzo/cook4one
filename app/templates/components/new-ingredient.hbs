@@ -1,0 +1,30 @@
+{{#if addNewIngredient}}
+  <h2>Add an ingredient</h2>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="measurement">Measurement</label>
+          {{input value=measurement id="measurement" placeholder="2"}}
+        </div>
+
+        <div class="form-group">
+          <label for="units">Units</label>
+          {{input value=units id="units" placeholder="cups"}}
+        </div>
+
+        <div class="form-group">
+          <label for="name">Ingredient Name</label>
+          {{input value=name id="name" placeholder="water"}}
+        </div>
+
+        <div class="form-group">
+          <label for="source">Source or notes</label>
+          {{input value=source id="source" placeholder="room temp"}}
+        </div>
+
+        <button {{action 'save1'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'ingredientFormShow'}}>New Ingredient</button>
+{{/if}}

@@ -1,0 +1,35 @@
+{{#if addNewRecipe}}
+  <h1>New Recipe</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Recipe Title</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="servings">Servings</label>
+          {{input value=servings id="servings"}}
+        </div>
+
+        <div class="form-group">
+          <label for="cook-time">Cook Time</label>
+          {{input value=cook_time id="cook-time"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input value=image id="image"}}
+        </div>
+
+        <div class="form-group">
+          <label for="directions">Directions</label>
+          {{input value=directions id="directions"}}
+        </div>
+
+        <button {{action 'save1'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'recipeFormShow'}}>Create a new Recipe</button>
+{{/if}}

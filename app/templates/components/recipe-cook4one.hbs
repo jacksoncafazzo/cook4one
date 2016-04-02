@@ -1,0 +1,24 @@
+<div class="row calculator">
+  <div class="col-md-6">
+    <h4>Recipe Calculator</h4>
+    <form>
+      <div class="form-group">
+        <label for="user-servings">How many servings to calculate for?</label>
+        {{input value=user-servings class="user-servings" placeholder=1}}
+        <div class="show-me">
+          <p {{action 'showCook4one'}}>Click here to show the updated recipe</p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-6">
+    {{#if isCook4One}}
+    <ul class="user-ingredients">
+      {{#each recipe.ingredients as |ingredient|}}
+      <li>{{cook4one ingredient.measurement recipe.servings user-servings}} {{ingredient.units}} {{ingredient.source}} {{ingredient.name}}</li>
+      {{/each}}
+    </ul>
+    {{else}}
+    {{/if}}
+  </div>
+</div>

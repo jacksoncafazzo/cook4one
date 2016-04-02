@@ -1,0 +1,26 @@
+{ "ingredients": [{
+    "measurement": 6,
+    "units": "ounces",
+    "name": "Skin-on Salmon Filets",
+    "source": "fresh",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }, {
+    "measurement": 1,
+    "units": "bunch",
+    "name": "Sorrel",
+    "source": "roughly 7 ounces in a bunch",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }, {
+    "measurement": 0.5,
+    "units": "small clove",
+    "name": "garlic",
+    "source": "peeled",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }, {
+    "measurement": 0.75,
+    "units": "cup",
+    "name": "Olive Oil",
+    "source": "Extra-Virgin",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }]
+}

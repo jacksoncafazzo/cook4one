@@ -1,0 +1,31 @@
+<h1>{{recipe.name}}</h1>
+<div class="row">
+  <div class="recipe-display col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <img class="recipe-image" src={{recipe.image}} alt="Picture of {{recipe.name}}"/>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <br><br>
+    <h4 class="cook"><strong>Cook Time:</strong> {{recipe.cook_time}}</h4>
+    <br>
+    <h4 class="cook"><strong>Serves:</strong> {{recipe.servings}}</h4>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-5 ingredients">
+    <ul>
+      {{#each recipe.ingredients as |ingredient|}}
+      {{ingredient-tile ingredient=ingredient update="update" destroyIngredient="destroyIngredient"}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-7">
+    {{recipe-cook4one recipe=recipe cook4one2="cook4one3"}}
+  </div>
+</div>
+<div class="row recipe-directions">
+  <h4>Directions:</h4>
+  <p>{{recipe.directions}}</p>
+{{update-recipe recipe=recipe update="update"}}
+<button {{action 'delete' recipe}}>Delete Recipe</button>
+</div>

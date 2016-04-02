@@ -1,0 +1,33 @@
+{ "recipes": [{
+  "name": "Sorrel Pistachio Pesto with Seared Salmon",
+  "servings": 4,
+  "cook_time": "10 minutes",
+  "directions": "Preheat a large heavy-bottomed skillet over low heat while you prepare the pesto. Remove the salmon from refrigerator to come to room temperature. Separate the sorrel stems from the leaves, and then discard the stems (especially if it's later in the sorrel season, when the stems are fibrous and tough). You should have about 4 packed cups of sorrel leaves. Combine the pistachios and garlic in the bowl of a food processor and pulse until the mixture is the consistency of coarse sand. Add the sorrel and pulse until all of the leaves are chopped and incorporated into the nuts. With the machine running, slowly add up to 3/4 cup of olive oil until the mixture is smooth. Season with about 1 1/4 teaspoons salt. Spoon about 2 heaping tablespoons of pesto on the bottom of each plate. Transfer the remaining pesto to a bowl and cover the surface with plastic wrap to prevent it from turning brown. For best use, keep in the refrigerator up to 3 days. Blot excess moisture from the salmon with a paper towel and sprinkle both sides with salt. Turn up the heat to medium-high and add the remaining 1 tablespoon oil. When the oil is shimmering, carefully place the salmon in the pan skin-side down to avoid any splattering oil. Don't worry if the salmon skin seems stuck to the pan, after about 2 minutes it will release. Lower the heat to medium and cook until the skin is crisp and brown, about 4 minutes total. Flip over and cook until the salmon is firm to the touch (it would still be a bit translucent in the center if you peeked), an additional 2 to 3 minutes. Remove from the pan and place the salmon skin-side up on each plate and serve. From Food Network Kitchens. Read more at: http://www.foodnetwork.com/recipes/food-network-kitchens/sorrel-pistachio-pesto-with-seared-salmon.html?oc=linkback",
+  "image": "http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/5/7/0/FNK_sorrel-pistachio-pesto-with-salmon_s4x3.jpg.rend.sni12col.landscape.jpeg"
+  }],
+  "ingredients": [{
+    "measurement": 6,
+    "units": "ounces",
+    "name": "Skin-on Salmon Filets",
+    "source": "fresh",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }, {
+    "measurement": 1,
+    "units": "bunch",
+    "name": "Sorrel",
+    "source": "roughly 7 ounces in a bunch",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }, {
+    "measurement": 0.5,
+    "units": "small clove",
+    "name": "garlic",
+    "source": "peeled",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }, {
+    "measurement": 0.75,
+    "units": "cup",
+    "name": "Olive Oil",
+    "source": "Extra-Virgin",
+    "recipe": "Sorrel Pistachio Pesto with Seared Salmon"
+  }]
+}
