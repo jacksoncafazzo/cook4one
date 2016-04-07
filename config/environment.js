@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'cook4one',
     environment: environment,
     firebase: 'https://cook4one.firebaseio.com/',
+    torii: { sessionServiceName: 'session' },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
